@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPO 344</title>
+    <style>
+        
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(https://elperiodico.mx/wp-content/uploads/2023/06/20230628-unam.png);
+            background-size: cover;
+            background-position: 100% 70%;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+        background-color: rgb(0, 94, 255);
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        color: #fee96c;
+    }
+
+    nav ul li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color:#fee96c;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+        left: 0;
+    }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: rgb(178, 178, 178);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .lightbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .lightbox-item {
+            margin: 10px;
+        }
+
+        .lightbox-item img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            overflow: auto;
+        }
+
+        .lightbox-modal-content {
+            display: block;
+            margin: auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .lightbox-modal-content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .lightbox-close {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            cursor: pointer;
+        }
+        #frase{
+            text-align: center;
+            font-family: cursive;
+            font-size: 20px;
+            color: goldenrod;
+        }
+        #creditos{
+            text-align: center;
+            font-family: cursive;
+            font-size: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>¡BIENVENIDOS!</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#docentes">Docentes</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#uprez">Uprez</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<h1 id="frase">“YO QUIERO PARA MIS ALUMNOS, LO MISMO QUE QUIERO PARA MIS HIJOS”</h1>
+
+<h2 id="creditos">PROF. EZEQUIEL FREDI OCAMPO LANDA</h2>
+
+<main>
+    <section id="inicio">
+        <h2>Bienvenidos a nuestra escuela</h2>
+        <p>Escuela fundada por el profesor Ezequiel Fredi Ocampo Landa junto a la organización Uprez, un día 2 de Octubre del año 2016 se otorgó la C.C.T 15EBH0549B, en su turno vespertino.</p>
+            <img src="https://i.pinimg.com/736x/66/f9/37/66f9371f00475a86a7e7e050f4b3432d.jpg" width="300">
+        <p>Se fundó con el objetivo de que la comunidad de Tlapala tuviera una mejor educación para sus jóvenes.</p>
+        <p>Si bien las instalaciones son prestadas por la Escuela Telesecunaria Emiliano Zapata Salazar, La Directora Susana Díaz Reyes, lucha día con día por la costruccion del edificio. </p>
+        <p>Esto es un proyecto de la comunidad ya que mientras ellos ponian el terreno y los alumnos, el profesor Fredi puso al personla con las ganas de enseñar a nuevas generaciones.</p>
+    </section>
+
+    <section id="docentes">
+        <h2>Docentes</h2>
+        <p>A continuacion se mostrara un listado de los profesores activos en el presente año (2024)</p>
+            <ul>
+                <li>Aguilar Ríos José Juan</li>
+                <li>Barrera Díaz José</li>
+                <li>Barrera Díaz Nathaly (Orientadora de Terceros)</li>
+                <li>Barrera Hernández Helio</li>
+                <li>Cervantes Jaime Áaron (Secretario)</li>
+                <li>Díaz Reyes Susana (Directora Escolar)</li>
+                <li>Franco Higuera Wendy Maricruz </li>
+                <li>Galicia Aguilar Jaqueline</li>
+                <li>Gonzaga Corrales Maximino Javier </li>
+                <li>Gutierrez Mártinez Mario Gerardo </li>
+                <li>Leal Ramirez Olivia (Orientadora de Primeros)</li>
+                <li>Maestra Arcelia (Administrativa)</li>
+                <li>Maestra Daniela (Orientadora de Segundos)</li>
+                <li>Mártinez Alarcón Manuel Alejandro </li>
+                <li>Mejorada Fernandez Alma Delfina </li>
+                <li>Mora Medina Karla </li>
+                <li>Neri Perez Gloria </li>
+                <li>Reyes Pérez Josefina </li>
+                <li>Sánchez Vergara Lizbeth</li>
+                <li>Sánchez Vergara Willi </li>
+                <li>Varela Rivera Maria de los Angeles </li>
+            </ul>
+        <h2>Personal de limpieza y seguridad</h2>
+            <ul>
+                <li>Doña Mary (Limpieza)</li>
+                <li>Don Armando (Seguridad)</li>
+            </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="lightbox-container">
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/66/f9/37/66f9371f00475a86a7e7e050f4b3432d.jpg" alt="Imagen 1" onclick="openModal('imagen1.jpg', 'Descripción de la Imagen 1')">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/24/9a/d4/249ad4a410f9203bf435102202744df5.jpg" alt="Imagen 2" onclick="openModal('imagen2.jpg', 'Descripción de la Imagen 2')">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/d8/94/fb/d894fb2d3633bda70c3a573441b2e7c1.jpg" alt="Imagen 3" onclick="openModal('imagen3.jpg', 'Descripción de la Imagen 3')">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/62/81/79/6281790c3435fc9601c3d4fa4caf0039.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/75/c4/17/75c417d7562dedb6c71e8abbd20b083d.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/9b/25/04/9b25046c17c4f1ee9f704f078ceb0164.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/bd/85/97/bd85979eb4e77b786d902c82ed2efcec.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/71/df/d7/71dfd79b48841c0d2063baa802a60b2f.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/df/e0/48/dfe048b225539d8503f013c987a07e19.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/d7/10/1c/d7101cf39afcba6b9f980fe24bf6030f.jpg">
+            </div>
+            
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/6a/80/52/6a80523d1d3dd3405f097d9b64f2e0f6.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/79/05/a7/7905a7363f5f7335d23d59271ea0df40.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/474x/37/f4/71/37f471a6fa6ef566075bb16472d64237.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/474x/42/3a/18/423a18604e1054cff1f3c5379cc25b19.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/474x/30/52/4c/30524c1963c4f0474cfc3f6e22bbe731.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/474x/7d/60/00/7d60006f312b67eeb0cb92ceaab4d316.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/c9/97/62/c99762879554d65682c675c5605fd170.jpg">
+            </div>
+            <div class="lightbox-item">
+                <img src="https://i.pinimg.com/736x/4a/ed/d5/4aedd50c6e4a6d5c0b5447d9194fb299.jpg">
+            </div>
+         
+        </div>
+    
+        <div class="lightbox-modal" id="myModal">
+            <span class="lightbox-close" onclick="closeModal()">&times;</span>
+            <div class="lightbox-modal-content">
+                <img id="modalImage" src="" alt="">
+                <p id="modalCaption"></p>
+            </div>
+        </div>
+    
+        
+    </section>
+
+    <script>
+        function openModal(imageSrc, caption) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalCaption').textContent = caption;
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+
+    <section id="uprez">
+        <h2>Uprez</h2>
+        <p>La Unión Popular Revolucionaria Emiliano Zapata (Uprez) fundada el 1 de Febrero de 1987. Tiene como objetivo formar una organización frentista que ayude a la transformación del país.</p>
+        <p>poner en práctica el Derecho a la Ciudad y la Defensa del Territorio.</p>
+        <p>Esta institución no solo ayudo a la fundación de la EPO 344 “Mártires de 1968”, ya que como esta han fundado muchas escuelas más.</p>
+        <p>Sus oficinas centrales localizadas en el municipio de Nezahualcóyotl, Estado de México, reflejan su compromiso con el pueblo, y sobre todo el compromiso con la educación de niños y jóvenes. </p>
+    <div class="lightbox-container">
+        <div class="lightbox-item">
+            <img src="https://i.pinimg.com/236x/80/c4/9b/80c49bee9ac6f4e63602c7069f707e5d.jpg">
+        </div>
+        <div class="lightbox-item">
+            <img src="https://i.pinimg.com/236x/d7/fc/f1/d7fcf18d7f85dc3bd59b06178fa45812.jpg">
+        </div>
+        <div class="lightbox-item">
+            <img src="https://i.pinimg.com/236x/78/15/a1/7815a17ff6e4f366f5554c47dca77eda.jpg">
+        </div>
+        <div class="lightbox-item">
+            <img src="https://i.pinimg.com/236x/27/25/56/27255662a977539886bf87f99338a9e3.jpg">
+        </div>
+    </div>    
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Información de contacto de la escuela.</p>
+        <address>
+            Dirección: Calle Prolongación Manuel Hernández #1 La Candelaria Tlapala, Municipio de Chalco C.P. 56641<br>
+            Teléfono: 55 5982 1169<br>
+            Correo Electrónico: preparatory344@gmail.com<br>
+        </address>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Todos los derechos reservados</p>
+</footer>
+  
+</body>
+</html>
